@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wpSeleccionCreacionUsuariosEmpresas.wpSeleccionCreacionUsuariosEmpresas, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Creación de Usuario Empresa con Pasantia</property>
+        <property name="Description" type="string">Control que permite la creación de usuarios de Empresas</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

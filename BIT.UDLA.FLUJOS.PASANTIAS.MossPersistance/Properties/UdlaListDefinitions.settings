@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BIT.UDLA.FLUJOS.PASANTIAS.MossPersistance.Properties" GeneratedClassName="UdlaListDefinitions">
+  <Profiles />
+  <Settings>
+    <Setting Name="Lista_Empresas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Empresas</Value>
+    </Setting>
+    <Setting Name="Lista_Pasantias" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lista Pasantias</Value>
+    </Setting>
+    <Setting Name="Url_Sitio" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://sntest05:84</Value>
+    </Setting>
+    <Setting Name="Lista_Visitas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lista Visitas</Value>
+    </Setting>
+    <Setting Name="Lista_Actividades" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lista de Actividades Por Estudiante</Value>
+    </Setting>
+    <Setting Name="Lista_Usuarios" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lista Usuarios</Value>
+    </Setting>
+    <Setting Name="Url_Proceso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://sntest05:84</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

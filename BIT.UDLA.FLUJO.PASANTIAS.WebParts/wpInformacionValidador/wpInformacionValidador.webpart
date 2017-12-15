@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wpInformacionValidador.wpInformacionValidador, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Validador de Flujo y Control de Permisos</property>
+        <property name="Description" type="string">Control que valida al usuario y al mismo en el paso del Flujo de Prácticas Pre-Profesionales.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

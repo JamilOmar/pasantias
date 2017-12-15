@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BIT.UDLA.FLUJO.PASANTIAS.WebParts.Properties" GeneratedClassName="Pages">
+  <Profiles />
+  <Settings>
+    <Setting Name="RegistroVisitas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/Dialogs/NuevaVisita.aspx</Value>
+    </Setting>
+    <Setting Name="RegistroActividades" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/Dialogs/NuevaActividad.aspx</Value>
+    </Setting>
+    <Setting Name="MensajePageName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/Mensaje.aspx</Value>
+    </Setting>
+    <Setting Name="SeleccionPractica" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/SeleccionDeTipoDePractica.aspx</Value>
+    </Setting>
+    <Setting Name="HojaDeVida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/HojaDeVida.aspx</Value>
+    </Setting>
+    <Setting Name="Empresas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/SeleccionEmpresas.aspx</Value>
+    </Setting>
+    <Setting Name="PaginaInformacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/BIT.UDLA.FLUJO.PASANTIAS.WebParts/Pasantias-Pre-Profesionales.aspx</Value>
+    </Setting>
+    <Setting Name="ConSupervision" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/ConSupervision.aspx</Value>
+    </Setting>
+    <Setting Name="EvaluacionFinal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/EvaluacionTutor.aspx</Value>
+    </Setting>
+    <Setting Name="SeleccionMateria" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/SeleccionDeMateria.aspx</Value>
+    </Setting>
+    <Setting Name="SeleccionAlumnosDocente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/SeleccionAlumnoDocente.aspx</Value>
+    </Setting>
+    <Setting Name="SeleccionUsuarioEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Supervisores/SeleccionSupervisorEmpresas.aspx</Value>
+    </Setting>
+    <Setting Name="SeleccionAlumnosEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Empresas/SeleccionAlumnoEmpresa.aspx</Value>
+    </Setting>
+    <Setting Name="FichaRegistroEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Empresas/FichaRegistro.aspx</Value>
+    </Setting>
+    <Setting Name="EvaluacionEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Encuestas/EvaluacionEmpresas.aspx</Value>
+    </Setting>
+    <Setting Name="EvaluacionEstudiante" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Encuestas/EvaluacionAlumnos.aspx</Value>
+    </Setting>
+    <Setting Name="Error" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/MensajeError.aspx</Value>
+    </Setting>
+    <Setting Name="RegistroUsuarios" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/Dialogs/NuevoUsuario.aspx</Value>
+    </Setting>
+    <Setting Name="FichaRegistroTutor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/FichaRegistroTutor.aspx</Value>
+    </Setting>
+    <Setting Name="FichaRegistroConfirmacionEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Empresas/FichaRegistroConfirmacionEmpresa.aspx</Value>
+    </Setting>
+    <Setting Name="Accion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/BIT.UDLA.FLUJO.PASANTIAS.WebParts/actionPage.aspx</Value>
+    </Setting>
+    <Setting Name="RouterPagina" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Empresas/RouterEmpresas.aspx</Value>
+    </Setting>
+    <Setting Name="Home" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EnProceso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/EnProceso.aspx</Value>
+    </Setting>
+    <Setting Name="RegistroCurso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/Dialogs/NuevoCurso.aspx</Value>
+    </Setting>
+    <Setting Name="Cursos" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/Cursos.aspx</Value>
+    </Setting>
+    <Setting Name="Ofertas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/SeleccionOfertas.aspx</Value>
+    </Setting>
+    <Setting Name="RutaEmpresaOfertas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/TipoEmpresasOfertas.aspx</Value>
+    </Setting>
+    <Setting Name="EmpresasPuerto" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://sntest06:8082/PaginasPracticasPreProfesionales/Empresas/Empresas.aspx</Value>
+    </Setting>
+    <Setting Name="CancelarPractica" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/CancelarPractica.aspx</Value>
+    </Setting>
+    <Setting Name="ConfirmarCancelacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/Cancelar/CancelarFlujo.aspx</Value>
+    </Setting>
+    <Setting Name="Finalizada" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/EnProceso.aspx</Value>
+    </Setting>
+    <Setting Name="InformacionEmpresas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/InformacionEmpresas.aspx</Value>
+    </Setting>
+    <Setting Name="NuevaEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Practicas/NuevaEmpresa.aspx</Value>
+    </Setting>
+    <Setting Name="IrADocente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Directo/Docentes.aspx</Value>
+    </Setting>
+    <Setting Name="IrAEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PaginasPracticasPreProfesionales/Empresas/Empresas.aspx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BIT.UDLA.FLUJOS.PASANTIAS.Constants.Properties" GeneratedClassName="Flujo">
+  <Profiles />
+  <Settings>
+    <Setting Name="INICIO" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INICIO</Value>
+    </Setting>
+    <Setting Name="ACTUALIZACION_HOJA_DE_VIDA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ACTUALIZACION_HOJA_DE_VIDA</Value>
+    </Setting>
+    <Setting Name="EMPRESA_SELECCIONADA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EMPRESA_SELECCIONADA</Value>
+    </Setting>
+    <Setting Name="SELECCION_USUARIO_DOCENTE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECCION_USUARIO_DOCENTE</Value>
+    </Setting>
+    <Setting Name="SELECCION_USUARIO_EMPRESA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECCION_USUARIO_EMPRESA</Value>
+    </Setting>
+    <Setting Name="ACEPTACION_ESTUDIANTE_EMPRESA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ACEPTACION_ESTUDIANTE_EMPRESA</Value>
+    </Setting>
+    <Setting Name="ASIGNACION_EMPRESA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ASIGNACION_EMPRESA</Value>
+    </Setting>
+    <Setting Name="REVISION_TUTOR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">REVISION_TUTOR</Value>
+    </Setting>
+    <Setting Name="CONFIRMACION_EMPRESA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CONFIRMACION_EMPRESA</Value>
+    </Setting>
+    <Setting Name="REGISTRO_TUTOR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">REGISTRO_TUTOR</Value>
+    </Setting>
+    <Setting Name="EDICION_ESTUDIANTE_EMPRESA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EDICION_ESTUDIANTE_EMPRESA</Value>
+    </Setting>
+    <Setting Name="SELECCION_MATERIA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECCION_MATERIA</Value>
+    </Setting>
+    <Setting Name="CANCELADO" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CANCELADO</Value>
+    </Setting>
+    <Setting Name="FINALIZACION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FINALIZADO</Value>
+    </Setting>
+    <Setting Name="CARTA_DE_COMPROMISO" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CARTA_DE_COMPROMISO</Value>
+    </Setting>
+    <Setting Name="EMPRESA_EN_PROCESO" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EMPRESA_EN_PROCESO</Value>
+    </Setting>
+    <Setting Name="NOTIFICAR_DOCENTE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NOTIFICAR_DOCENTE</Value>
+    </Setting>
+    <Setting Name="SELECCION_PRACTICA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECCION_PRACTICA</Value>
+    </Setting>
+    <Setting Name="NOTIFICAR_USUARIO_EMPRESA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NOTIFICAR_USUARIO_EMPRESA</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

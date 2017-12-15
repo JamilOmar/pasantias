@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BIT.UDLA.FLUJOS.PASANTIAS.Constants.Properties" GeneratedClassName="Mensajes">
+  <Profiles />
+  <Settings>
+    <Setting Name="Excepcion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Se ha producido un error</Value>
+    </Setting>
+    <Setting Name="SeleccionarTutor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No existe tutor</Value>
+    </Setting>
+    <Setting Name="ErrorADUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Error al obtener informacion del tutor</Value>
+    </Setting>
+    <Setting Name="ObtenerMOSSID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Error al obtener tutor ID</Value>
+    </Setting>
+    <Setting Name="ObtenerMateria" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Materia Invalida</Value>
+    </Setting>
+    <Setting Name="ObtenerHoras" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Error al obtener horas</Value>
+    </Setting>
+    <Setting Name="MaxHoras" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">El numero de horas ingresadas supera las horas necesarias para la materia</Value>
+    </Setting>
+    <Setting Name="ValidarDeudas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Por favor acércate al departamento de financiamiento UDLA</Value>
+    </Setting>
+    <Setting Name="LinkPractica" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ACCIÓN</Value>
+    </Setting>
+    <Setting Name="NumeroMaximoLineas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="NombrePractica" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PRÁCTICA-{0}</Value>
+    </Setting>
+    <Setting Name="MensajeConfirmacionFichaEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Está seguro/a que desea ingresar el número de horas ejecutadas?</Value>
+    </Setting>
+    <Setting Name="MensajeConfirmacionFichaEmpresaConfirmar" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Deseas dar por finalizada la práctica?</Value>
+    </Setting>
+    <Setting Name="MensajeUsuarioInactivo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Usuario InActivo, seleccione o cree otro usuario</Value>
+    </Setting>
+    <Setting Name="MensajeCanceladoEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CANCELADO POR EMPRESA</Value>
+    </Setting>
+    <Setting Name="MensajeCanceladoDocente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CANCELADO POR DOCENTE</Value>
+    </Setting>
+    <Setting Name="MensajeCanceladoTutor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CANCELADO  POR TUTOR</Value>
+    </Setting>
+    <Setting Name="TextoIrADocente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ir a Listado de  Prácticas Asignadas</Value>
+    </Setting>
+    <Setting Name="TextoIrAEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ir a Listado de Prácticas Asignadas</Value>
+    </Setting>
+    <Setting Name="ValidarCuartaMatricula" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Has agotado el número de matrículas permitidas.</Value>
+    </Setting>
+    <Setting Name="ValidarResolucionRetiro" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No te encuentras vigente en el período académico actual.</Value>
+    </Setting>
+    <Setting Name="SeleccionarAlumno" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No te encuentras vigente en el periodo académico actual.</Value>
+    </Setting>
+    <Setting Name="ValidarNivel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No te encuentras en el nivel para iniciar la práctica.</Value>
+    </Setting>
+    <Setting Name="ErrorValidacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ha existido un problema.</Value>
+    </Setting>
+    <Setting Name="SeleccionarNivel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No te encuentras vigente en el período académico actual.</Value>
+    </Setting>
+    <Setting Name="MensajeConfirmacionFichaTutor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Está seguro/a que desea ingresar el número de horas?</Value>
+    </Setting>
+    <Setting Name="MensajeConfirmacionHorasSaes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Estas seguro de registrar las horas en el sistema académico?</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

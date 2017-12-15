@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wpSeleccionAlumnosDocente.wpSeleccionAlumnosDocente, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Selección de Alumnos para Docentes</property>
+        <property name="Description" type="string">Control que permite la selección de Alumnos para Docentes</property>
+
+      </properties>
+    </data>
+  </webPart>
+</webParts>

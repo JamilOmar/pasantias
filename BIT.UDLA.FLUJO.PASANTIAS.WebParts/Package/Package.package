@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="38fc2098-801a-4b03-8a65-d647dfcf700b" solutionId="38fc2098-801a-4b03-8a65-d647dfcf700b" resetWebServer="false" name="BIT.UDLA.FLUJO.PASANTIAS.WebParts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="20fb5e1c-a1c8-4212-ae31-44ddf28b147f" />
+    <featureReference itemId="9e55fbe7-a2c5-43c9-a935-7423ecfb0768" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="93414228-1224-4336-9339-6033807b78fc" />
+    <projectItemReference itemId="968e0d20-a785-44c3-9eb4-36307f9f67a3" />
+  </projectItems>
+</package>

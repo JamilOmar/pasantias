@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wpCursos.wpCursos, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Cursos</property>
+        <property name="Description" type="string">Permite crear cursos para los estudiantes</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

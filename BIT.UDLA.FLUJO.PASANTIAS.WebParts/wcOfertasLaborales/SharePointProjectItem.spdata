@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="wcOfertasLaboralesUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="wcOfertasLaborales\" Type="ElementManifest" />
+    <ProjectItemFile Source="wcOfertasLaborales.webpart" Target="wcOfertasLaborales\" Type="ElementFile" />
+    <ProjectItemFile Source="wcOfertasLaboralesUserControl.ascx" Target="CONTROLTEMPLATES\BIT.UDLA.FLUJO.PASANTIAS.WebParts\wcOfertasLaborales\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wcOfertasLaborales" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

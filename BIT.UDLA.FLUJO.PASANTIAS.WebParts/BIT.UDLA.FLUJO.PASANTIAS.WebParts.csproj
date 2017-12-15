@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C30495E1-C812-485C-93EA-066A55B5BF60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BIT.UDLA.FLUJO.PASANTIAS.WebParts</RootNamespace>
+    <AssemblyName>BIT.UDLA.FLUJO.PASANTIAS.WebParts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.IdentityModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\Microsoft.SharePoint.IdentityModel\14.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrAgregarUsuario.ascx.cs">
+      <DependentUpon>usrAgregarUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrAgregarUsuario.ascx.designer.cs">
+      <DependentUpon>usrAgregarUsuario.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrBuscador.ascx.cs">
+      <DependentUpon>usrBuscador.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrBuscador.ascx.designer.cs">
+      <DependentUpon>usrBuscador.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCancelarPractica.ascx.cs">
+      <DependentUpon>usrCancelarPractica.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCancelarPractica.ascx.designer.cs">
+      <DependentUpon>usrCancelarPractica.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCommand.ascx.cs">
+      <DependentUpon>usrCommand.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCommand.ascx.designer.cs">
+      <DependentUpon>usrCommand.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCurso.ascx.cs">
+      <DependentUpon>usrCurso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCurso.ascx.designer.cs">
+      <DependentUpon>usrCurso.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrPager.ascx.cs">
+      <DependentUpon>usrPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrPager.ascx.designer.cs">
+      <DependentUpon>usrPager.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrRegistroActividades.ascx.cs">
+      <DependentUpon>usrRegistroActividades.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrRegistroActividades.ascx.designer.cs">
+      <DependentUpon>usrRegistroActividades.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrRegistroVisitas.ascx.cs">
+      <DependentUpon>usrRegistroVisitas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrRegistroVisitas.ascx.designer.cs">
+      <DependentUpon>usrRegistroVisitas.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DialogLayoutsPageBage.cs" />
+    <Compile Include="Layouts\Cancelar\CancelarFlujo.aspx.cs">
+      <DependentUpon>CancelarFlujo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Cancelar\CancelarFlujo.aspx.designer.cs">
+      <DependentUpon>CancelarFlujo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevoCurso.aspx.cs">
+      <DependentUpon>NuevoCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevoCurso.aspx.designer.cs">
+      <DependentUpon>NuevoCurso.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Router\RouterEmpresa.aspx.cs">
+      <DependentUpon>RouterEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Router\RouterEmpresa.aspx.designer.cs">
+      <DependentUpon>RouterEmpresa.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevaActividad.aspx.cs">
+      <DependentUpon>NuevaActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevaActividad.aspx.designer.cs">
+      <DependentUpon>NuevaActividad.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevaVisita.aspx.cs">
+      <DependentUpon>NuevaVisita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevaVisita.aspx.designer.cs">
+      <DependentUpon>NuevaVisita.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevoUsuario.aspx.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Dialogs\NuevoUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoUsuario.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Login\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Login\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\BIT.UDLA.FLUJO.PASANTIAS.WebParts\actionPage.aspx.cs">
+      <DependentUpon>actionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\BIT.UDLA.FLUJO.PASANTIAS.WebParts\actionPage.aspx.designer.cs">
+      <DependentUpon>actionPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Pages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Pages.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wcOfertasLaborales\wcOfertasLaborales.cs" />
+    <Compile Include="wcOfertasLaborales\wcOfertasLaboralesUserControl.ascx.cs">
+      <DependentUpon>wcOfertasLaboralesUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wcOfertasLaborales\wcOfertasLaboralesUserControl.ascx.designer.cs">
+      <DependentUpon>wcOfertasLaboralesUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpActualizarNota\wpActualizarNota.cs" />
+    <Compile Include="wpActualizarNota\wpActualizarNotaUserControl.ascx.cs">
+      <DependentUpon>wpActualizarNotaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpActualizarNota\wpActualizarNotaUserControl.ascx.designer.cs">
+      <DependentUpon>wpActualizarNotaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpAcuerdo\wpAcuerdo.cs" />
+    <Compile Include="wpAcuerdo\wpAcuerdoUserControl.ascx.cs">
+      <DependentUpon>wpAcuerdoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpAcuerdo\wpAcuerdoUserControl.ascx.designer.cs">
+      <DependentUpon>wpAcuerdoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpCancelarPractica\wpCancelarPractica.cs" />
+    <Compile Include="wpCancelarPractica\wpCancelarPracticaUserControl.ascx.cs">
+      <DependentUpon>wpCancelarPracticaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpCancelarPractica\wpCancelarPracticaUserControl.ascx.designer.cs">
+      <DependentUpon>wpCancelarPracticaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpConSupervision\wpConSupervision.cs" />
+    <Compile Include="wpConSupervision\wpConSupervisionUserControl.ascx.cs">
+      <DependentUpon>wpConSupervisionUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpConSupervision\wpConSupervisionUserControl.ascx.designer.cs">
+      <DependentUpon>wpConSupervisionUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpCursos\wpCursos.cs" />
+    <Compile Include="wpCursos\wpCursosUserControl.ascx.cs">
+      <DependentUpon>wpCursosUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpCursos\wpCursosUserControl.ascx.designer.cs">
+      <DependentUpon>wpCursosUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpEmpresas\wpEmpresas.cs" />
+    <Compile Include="wpEmpresas\wpEmpresasUserControl.ascx.cs">
+      <DependentUpon>wpEmpresasUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpEmpresas\wpEmpresasUserControl.ascx.designer.cs">
+      <DependentUpon>wpEmpresasUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpHojaDeVida\wpHojaDeVida.cs" />
+    <Compile Include="wpHojaDeVida\wpHojaDeVidaUserControl.ascx.cs">
+      <DependentUpon>wpHojaDeVidaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpHojaDeVida\wpHojaDeVidaUserControl.ascx.designer.cs">
+      <DependentUpon>wpHojaDeVidaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpInformacionValidador\wpInformacionValidador.cs" />
+    <Compile Include="wpInformacionValidador\wpInformacionValidadorUserControl.ascx.cs">
+      <DependentUpon>wpInformacionValidadorUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpInformacionValidador\wpInformacionValidadorUserControl.ascx.designer.cs">
+      <DependentUpon>wpInformacionValidadorUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpListaEmpresas\wpListaEmpresas.cs" />
+    <Compile Include="wpListaEmpresas\wpListaEmpresasUserControl.ascx.cs">
+      <DependentUpon>wpListaEmpresasUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpListaEmpresas\wpListaEmpresasUserControl.ascx.designer.cs">
+      <DependentUpon>wpListaEmpresasUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionAlumnosDocente\wpSeleccionAlumnosDocente.cs" />
+    <Compile Include="wpSeleccionAlumnosDocente\wpSeleccionAlumnosDocenteUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionAlumnosDocenteUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionAlumnosDocente\wpSeleccionAlumnosDocenteUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionAlumnosDocenteUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionAlumnosEmpresa\wpSeleccionAlumnosEmpresa.cs" />
+    <Compile Include="wpSeleccionAlumnosEmpresa\wpSeleccionAlumnosEmpresaUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionAlumnosEmpresaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionAlumnosEmpresa\wpSeleccionAlumnosEmpresaUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionAlumnosEmpresaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionCreacionUsuariosEmpresas\wpSeleccionCreacionUsuariosEmpresas.cs" />
+    <Compile Include="wpSeleccionCreacionUsuariosEmpresas\wpSeleccionCreacionUsuariosEmpresasUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionCreacionUsuariosEmpresasUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionCreacionUsuariosEmpresas\wpSeleccionCreacionUsuariosEmpresasUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionCreacionUsuariosEmpresasUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionEmpresaRuta\wpSeleccionEmpresaRuta.cs" />
+    <Compile Include="wpSeleccionEmpresaRuta\wpSeleccionEmpresaRutaUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionEmpresaRutaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionEmpresaRuta\wpSeleccionEmpresaRutaUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionEmpresaRutaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionMateria\wpSeleccionMateria.cs" />
+    <Compile Include="wpSeleccionMateria\wpSeleccionMateriaUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionMateriaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionMateria\wpSeleccionMateriaUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionMateriaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionOfertaEmpresaRuta\wpSeleccionOfertaEmpresaRuta.cs" />
+    <Compile Include="wpSeleccionOfertaEmpresaRuta\wpSeleccionOfertaEmpresaRutaUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionOfertaEmpresaRutaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionOfertaEmpresaRuta\wpSeleccionOfertaEmpresaRutaUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionOfertaEmpresaRutaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wpSeleccionPasantia\wpSeleccionPasantia.cs" />
+    <Compile Include="wpSeleccionPasantia\wpSeleccionPasantiaUserControl.ascx.cs">
+      <DependentUpon>wpSeleccionPasantiaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpSeleccionPasantia\wpSeleccionPasantiaUserControl.ascx.designer.cs">
+      <DependentUpon>wpSeleccionPasantiaUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\wpUsrControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpUsuarioEmpresaEstudianteEvaluar\wpUsuarioEmpresaEstudianteEvaluar.cs" />
+    <Compile Include="wpUsuarioEmpresaEstudianteEvaluar\wpUsuarioEmpresaEstudianteEvaluarUserControl.ascx.cs">
+      <DependentUpon>wpUsuarioEmpresaEstudianteEvaluarUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wpUsuarioEmpresaEstudianteEvaluar\wpUsuarioEmpresaEstudianteEvaluarUserControl.ascx.designer.cs">
+      <DependentUpon>wpUsuarioEmpresaEstudianteEvaluarUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{968e0d20-a785-44c3-9eb4-36307f9f67a3}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9e55fbe7-a2c5-43c9-a935-7423ecfb0768}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{93414228-1224-4336-9339-6033807b78fc}</SharePointProjectItemId>
+    </None>
+    <None Include="Properties\Pages.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Pages.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="wcOfertasLaborales\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37bc710e-7852-42f3-b175-5c96fa787bff}</SharePointProjectItemId>
+    </None>
+    <None Include="wcOfertasLaborales\wcOfertasLaborales.webpart" />
+    <None Include="wpActualizarNota\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6030923-3677-49b3-b758-a27528350566}</SharePointProjectItemId>
+    </None>
+    <None Include="wpActualizarNota\wpActualizarNota.webpart" />
+    <None Include="wpAcuerdo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9be7b3a8-7c1e-49b8-a958-6b530446d2af}</SharePointProjectItemId>
+    </None>
+    <None Include="wpAcuerdo\wpAcuerdo.webpart" />
+    <None Include="wpCancelarPractica\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b6304334-9eab-46aa-8b4f-ef372f6daa3c}</SharePointProjectItemId>
+    </None>
+    <None Include="wpCancelarPractica\wpCancelarPractica.webpart" />
+    <None Include="wpConSupervision\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9cbf4d69-1d67-4586-ab16-046b03d96f21}</SharePointProjectItemId>
+    </None>
+    <None Include="wpConSupervision\wpConSupervision.webpart" />
+    <None Include="wpCursos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f3a103ab-3e93-4c53-bd6d-8ffe3b9a9e1c}</SharePointProjectItemId>
+    </None>
+    <None Include="wpCursos\wpCursos.webpart" />
+    <None Include="wpEmpresas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bf918e88-2100-475e-815c-24cec8fedbab}</SharePointProjectItemId>
+    </None>
+    <None Include="wpEmpresas\wpEmpresas.webpart" />
+    <None Include="wpHojaDeVida\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc95ff05-abd5-4ceb-9467-25a534300f1f}</SharePointProjectItemId>
+    </None>
+    <None Include="wpHojaDeVida\wpHojaDeVida.webpart" />
+    <None Include="wpInformacionValidador\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{516d3ce9-f263-4e9c-af52-3f7e8f02198e}</SharePointProjectItemId>
+    </None>
+    <None Include="wpInformacionValidador\wpInformacionValidador.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="wpListaEmpresas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4b0ef55-4bae-480c-89c6-5c50ad9bc005}</SharePointProjectItemId>
+    </None>
+    <None Include="wpListaEmpresas\wpListaEmpresas.webpart" />
+    <None Include="wpSeleccionAlumnosDocente\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{167ed0ed-3e62-4e05-9007-68d5026f02f0}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionAlumnosDocente\wpSeleccionAlumnosDocente.webpart" />
+    <None Include="wpSeleccionAlumnosEmpresa\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f74bb615-54c7-45e5-82ac-be2b7bdd52bd}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionAlumnosEmpresa\wpSeleccionAlumnosEmpresa.webpart" />
+    <None Include="wpSeleccionCreacionUsuariosEmpresas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1f7f22d-d224-4a0f-8201-6fa06cece5ef}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionCreacionUsuariosEmpresas\wpSeleccionCreacionUsuariosEmpresas.webpart" />
+    <None Include="wpSeleccionEmpresaRuta\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37bc0053-9f2c-4851-8880-1ac34720756c}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionEmpresaRuta\wpSeleccionEmpresaRuta.webpart" />
+    <None Include="wpSeleccionMateria\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{99c880b2-c79c-40d4-b7fc-b4fa3fdc89ef}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionMateria\wpSeleccionMateria.webpart" />
+    <None Include="wpSeleccionOfertaEmpresaRuta\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28e38b82-480a-4c5b-9e0d-aeb119d87895}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionOfertaEmpresaRuta\wpSeleccionOfertaEmpresaRuta.webpart" />
+    <None Include="wpSeleccionPasantia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5507b324-1dfe-40bc-bbaa-33ed4e592726}</SharePointProjectItemId>
+    </None>
+    <None Include="wpSeleccionPasantia\wpSeleccionPasantia.webpart" />
+    <None Include="wpUsuarioEmpresaEstudianteEvaluar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad7c5f80-1d81-4c13-95d4-6b5c2f168aa3}</SharePointProjectItemId>
+    </None>
+    <None Include="wpUsuarioEmpresaEstudianteEvaluar\wpUsuarioEmpresaEstudianteEvaluar.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrAgregarUsuario.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrBuscador.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCancelarPractica.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCommand.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrCurso.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrPager.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrRegistroActividades.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="ControlTemplates\BIT.UDLA.FLUJO.PASANTIAS.WebParts\usrRegistroVisitas.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\BIT.UDLA.FLUJO.PASANTIAS.WebParts\actionPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Cancelar\CancelarFlujo.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Login\sis_pp_01.jpg" />
+    <Content Include="Layouts\Dialogs\NuevaActividad.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Dialogs\NuevaVisita.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Dialogs\NuevoCurso.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Dialogs\NuevoUsuario.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Login\foto_estu.jpg" />
+    <Content Include="Layouts\Login\LoginPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Login\udla.jpg" />
+    <Content Include="Layouts\Router\RouterEmpresa.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wcOfertasLaborales\Elements.xml" />
+    <Content Include="wcOfertasLaborales\wcOfertasLaboralesUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpActualizarNota\Elements.xml" />
+    <Content Include="wpActualizarNota\wpActualizarNotaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpAcuerdo\Elements.xml" />
+    <Content Include="wpAcuerdo\wpAcuerdoUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpCancelarPractica\Elements.xml" />
+    <Content Include="wpCancelarPractica\wpCancelarPracticaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpConSupervision\Elements.xml" />
+    <Content Include="wpConSupervision\wpConSupervisionUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpCursos\Elements.xml" />
+    <Content Include="wpCursos\wpCursosUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpEmpresas\Elements.xml" />
+    <Content Include="wpEmpresas\wpEmpresasUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpHojaDeVida\Elements.xml" />
+    <Content Include="wpHojaDeVida\wpHojaDeVidaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpInformacionValidador\Elements.xml" />
+    <Content Include="wpInformacionValidador\wpInformacionValidadorUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpListaEmpresas\Elements.xml" />
+    <Content Include="wpListaEmpresas\wpListaEmpresasUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionAlumnosDocente\Elements.xml" />
+    <Content Include="wpSeleccionAlumnosDocente\wpSeleccionAlumnosDocenteUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionAlumnosEmpresa\Elements.xml" />
+    <Content Include="wpSeleccionAlumnosEmpresa\wpSeleccionAlumnosEmpresaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionCreacionUsuariosEmpresas\Elements.xml" />
+    <Content Include="wpSeleccionCreacionUsuariosEmpresas\wpSeleccionCreacionUsuariosEmpresasUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionEmpresaRuta\Elements.xml" />
+    <Content Include="wpSeleccionEmpresaRuta\wpSeleccionEmpresaRutaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionMateria\Elements.xml" />
+    <Content Include="wpSeleccionMateria\wpSeleccionMateriaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionOfertaEmpresaRuta\Elements.xml" />
+    <Content Include="wpSeleccionOfertaEmpresaRuta\wpSeleccionOfertaEmpresaRutaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpSeleccionPasantia\Elements.xml" />
+    <Content Include="wpSeleccionPasantia\wpSeleccionPasantiaUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="wpUsuarioEmpresaEstudianteEvaluar\Elements.xml" />
+    <Content Include="wpUsuarioEmpresaEstudianteEvaluar\wpUsuarioEmpresaEstudianteEvaluarUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{38fc2098-801a-4b03-8a65-d647dfcf700b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature BIT Udla Flujos Pasantia\Feature BIT Udla Flujos Pasantia.feature">
+      <FeatureId>{20fb5e1c-a1c8-4212-ae31-44ddf28b147f}</FeatureId>
+    </None>
+    <None Include="Features\Feature BIT Udla Flujos Pasantia\Feature BIT Udla Flujos Pasantia.Template.xml">
+      <DependentUpon>Feature BIT Udla Flujos Pasantia.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BIT.UDLA.FLUJOS.PASANTIAS.Comun\BIT.UDLA.FLUJOS.PASANTIAS.Comun.csproj">
+      <Project>{AE3879BF-DB9C-416F-A03C-D9D021ACD6DD}</Project>
+      <Name>BIT.UDLA.FLUJOS.PASANTIAS.Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIT.UDLA.FLUJOS.PASANTIAS.Constants\BIT.UDLA.FLUJOS.PASANTIAS.Constants.csproj">
+      <Project>{3A189E32-1920-4BBC-BEA0-D7E79D7E5F76}</Project>
+      <Name>BIT.UDLA.FLUJOS.PASANTIAS.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIT.UDLA.FLUJOS.PASANTIAS.Entities\BIT.UDLA.FLUJOS.PASANTIAS.Entities.csproj">
+      <Project>{AD439141-8950-4B69-8BE4-9B95FCC435AD}</Project>
+      <Name>BIT.UDLA.FLUJOS.PASANTIAS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIT.UDLA.FLUJOS.PASANTIAS.Logic\BIT.UDLA.FLUJOS.PASANTIAS.Logic.csproj">
+      <Project>{D1FED0B8-230F-4C6C-822C-4F5F181F5DB1}</Project>
+      <Name>BIT.UDLA.FLUJOS.PASANTIAS.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wpAcuerdo.wpAcuerdo, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Acuerdo de Aceptación de Prácticas</property>
+        <property name="Description" type="string">Control que crea y da inicio a las prácticas preProfesionales</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

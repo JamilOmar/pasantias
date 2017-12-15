@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BIT.UDLA.FLUJOS.PASANTIAS.Constants.Properties" GeneratedClassName="Connectors">
+  <Profiles />
+  <Settings>
+    <Setting Name="SAES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Dsn=SAES</Value>
+    </Setting>
+    <Setting Name="Backup" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=SNTEST01\SQL2K5;Initial Catalog=BolsaEmpleo_Test;Persist Security Info=True;User ID=sa;Password=123456</Value>
+    </Setting>
+    <Setting Name="BEmpleo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.4.45;Database=BolsaEmpleo_Test;User ID=sa;Password=123456;Trusted_Connection=False;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

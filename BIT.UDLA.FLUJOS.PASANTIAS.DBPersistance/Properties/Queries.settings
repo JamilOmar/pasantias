@@ -1,0 +1,551 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BIT.UDLA.FLUJOS.PASANTIAS.DBPersistance.Properties" GeneratedClassName="Queries">
+  <Profiles />
+  <Settings>
+    <Setting Name="EliminarEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM  empresa where emp_id= @emp_id</Value>
+    </Setting>
+    <Setting Name="SeleccionarEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from empresa where emp_id= @emp_id</Value>
+    </Setting>
+    <Setting Name="SeleccionarHojaVida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select *
+from Persona  where per_matricula=@per_matricula</Value>
+    </Setting>
+    <Setting Name="InsertarUsuarioEmpresaEvaluacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO [UsuarioEmpresaEvaluacionEstudiante]
+           ([Nombre]
+           ,[Cedula]
+           ,[Cargo]
+           ,[AreaTrabajo]
+           ,[Funciones]
+           ,[FechaInicio]
+           ,[FechaFin]
+           ,[HorarioTrabajo]
+           ,[NumeroHorasEjecutadas])
+     VALUES
+           (@Nombre
+           ,@Cedula
+           ,@Cargo
+           ,@AreaTrabajo
+           ,@Funciones
+           ,@FechaInicio
+           ,@FechaFin
+           ,@HorarioTrabajo
+           ,@NumeroHorasEjecutadas)</Value>
+    </Setting>
+    <Setting Name="InsertarSupervisor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO Supervisor
+          (IdEmpresa ,Nombres ,Area,Telefono ,Email)
+     VALUES
+ (@IdEmpresa ,@Nombres ,@Area ,@Telefono,@Email)</Value>
+    </Setting>
+    <Setting Name="SeleccionarSupervisor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from supervisor where Id= @id</Value>
+    </Setting>
+    <Setting Name="SeleccionarSupervisorPorEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from supervisor where emp_id= @emp_id</Value>
+    </Setting>
+    <Setting Name="SeleccionarListaEmpresas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM (SELECT TOP (@TamanioPagina) * FROM  (SELECT TOP (@NumeroPagina) * FROM Empresa AS T1 ORDER BY emp_id ASC) AS T2 ORDER BY emp_id DESC) T3 ORDER BY emp_id ASC </Value>
+    </Setting>
+    <Setting Name="InsertarUsuarioEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InsertNewEmpresasUser</Value>
+    </Setting>
+    <Setting Name="ActualizarUsuarioEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UpdateEmpresasUser</Value>
+    </Setting>
+    <Setting Name="SeleccionarMateria" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select pert_asig, pert_nive,
+            (select asig_prac from aaasig where asig_codi=pert_asig) as asig_prac,
+            (select asig_desc from aaasig where asig_codi=pert_asig) as asig_desc,
+            (select asig_hpra from aaasig where asig_codi=pert_asig) as asig_hpra,
+            (select min(pers_rutp || pers_dve || '|' || trim(pers_nomb) || ' ' || trim(pers_apat)) from aahora,aapara,adpers where hora_asig=pert_asig and hora_secc=1 and hora_anoa=para_anoa and hora_vepe=para_vepe and pers_rutp=hora_prof) as docente
+from aapert
+where pert_asig=?
+</Value>
+    </Setting>
+    <Setting Name="SeleccionarMateriaPorId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select pert_asig, pert_nive,
+            (select asig_prac from aaasig where asig_codi=pert_asig) as asig_prac,
+            (select asig_desc from aaasig where asig_codi=pert_asig) as asig_desc,
+            (select asig_hpra from aaasig where asig_codi=pert_asig) as asig_hpra,
+            (select min(pers_rutp || pers_dve || '|' || trim(pers_nomb) || ' ' || trim(pers_apat)) from aahora,aapara,adpers where hora_asig=pert_asig and hora_secc=1 and hora_anoa=para_anoa and hora_vepe=para_vepe and pers_rutp=hora_prof) as docente
+from aapert
+where pert_asig=?
+</Value>
+    </Setting>
+    <Setting Name="SeleccionarListaMaterias" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select pert_asig, pert_nive,
+            (select asig_prac from aaasig where asig_codi=pert_asig) as asig_prac,
+            (select asig_desc from aaasig where asig_codi=pert_asig) as asig_desc,
+            (select asig_hpra from aaasig where asig_codi=pert_asig) as asig_hpra,
+            (select min(pers_rutp || pers_dve || '|' || trim(pers_nomb) || ' ' || trim(pers_apat)) from aahora,aapara,adpers where hora_asig=pert_asig and hora_secc=1 and hora_anoa=para_anoa and hora_vepe=para_vepe and pers_rutp=hora_prof) as docente
+from aapert
+where pert_carr=?
+and pert_plan=?
+and pert_espe=?
+and pert_asig in (select asig_codi from aaasig where asig_hpra&lt;&gt;0 and asig_prac in ('N','I','F'))</Value>
+    </Setting>
+    <Setting Name="InsertarEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO Empresa
+(emp_ruc
+,emp_razon_social
+,emp_nombre
+,emp_representante
+,emp_direccion
+,emp_telefono)
+VALUES
+(@emp_ruc
+,@emp_razon_social
+,@emp_nombre
+,@emp_representante
+,@emp_direccion
+,@emp_telefono)</Value>
+    </Setting>
+    <Setting Name="SeleccionarEstudianteSAES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from academico where matricula=@matricula</Value>
+    </Setting>
+    <Setting Name="VerificaExistenciaHojaVida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select per_matricula from persona where per_matricula=@per_matricula</Value>
+    </Setting>
+    <Setting Name="HojaVidaEditable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select *
+from Persona  where per_matricula=@per_matricula</Value>
+    </Setting>
+    <Setting Name="InsertarHojaVidaPrueba" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">insert persona(per_nombres,per_apellidos,per_genero) values(@per_nombres,@per_apellidos,@per_genero)</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuarios" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsers</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuariosPorEmailPaginados" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersByEmailPaged</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuarioPorUsernamePaginados" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersByUserNamePaged</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuariosPaginados" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersPaged</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByEmail</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorEmailEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByEmailEmpresa</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByUserName</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorUserNameEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByUserNameEmpresa</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorUserNamePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByUsernamePassword</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorUserNamePasswordEmpresa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByUsernamePasswordEmpresa</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuariosPorEmpresasPaginados" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersByEmpPaged</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioPorID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserById</Value>
+    </Setting>
+    <Setting Name="ObtenerUsuarioEmpresasPorID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetUserByIdEmpresa</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuariosPorEmailPaginadosCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersByEmailPagedCount</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuarioPorUsernamePaginadosCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersByUserNamePagedCount</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuariosPaginadosCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersPagedCount</Value>
+    </Setting>
+    <Setting Name="ObtenerTodosLosUsuariosPorEmpresasPaginadosCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllUsersByEmpPagedCount</Value>
+    </Setting>
+    <Setting Name="InsertarNotaBE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UpsertHoras</Value>
+    </Setting>
+    <Setting Name="InsertarNotaSAES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EXECUTE PROCEDURE pasantias_upserthoras(?,?,?,?,?,?,?,?,?,?)</Value>
+    </Setting>
+    <Setting Name="SeleccionarAlumno" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT      alum_rut, alum_dv, alum_nmat, alum_carr, alum_plan, alum_espe, alum_jorn,
+                  pers_nomb, pers_apat, pers_amat, pers_sexo, pers_eciv, pers_fnac,
+                  dire_ciud, dire_dire, dire_fono, dire_fax, dire_mail,
+                  (SELECT carr_desl FROM  adcarr where (carr_codi=alum_carr)) AS carr_desl,
+                  (SELECT ciud_desc FROM  adciud where (ciud_codi=dire_ciud)) AS ciud_desc,
+                  alum_apad, alum_nive
+FROM         adalum, adpers, addire, aapara
+WHERE     (alum_nmat = ?)  AND (alum_pvig IS NOT NULL) AND (alum_rut = pers_rutp) AND (alum_rut = dire_rutp) AND (dire_tide = '01') AND (alum_apad = para_anoa)
+ORDER BY alum_apad DESC, alum_nive DESC</Value>
+    </Setting>
+    <Setting Name="SeleccionarNivel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select max(distinct nial_nive) as nial_nive
+from aanial,aapara
+where nial_anoa=para_anoa
+and nial_vepe=DECODE(para_vepe,3,2,para_vepe)
+and nial_nmat=?
+and nial_carr=?
+and nial_plan=?
+and nial_espe=?</Value>
+    </Setting>
+    <Setting Name="SeleccionarTutor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select pers_rutp, pers_dve, pers_nomb, pers_apat
+from aatual, aapara, adpers
+where tual_alum=?
+and tual_anoa=para_anoa
+and tual_vepe=DECODE(para_vepe,3,2,para_vepe)
+and pers_rutp=tual_tuto
+</Value>
+    </Setting>
+    <Setting Name="ValidarCuartaMatricula" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select count(*) as cuarta_matricula from aairre,aapara
+where irre_anoa=para_anoa
+and irre_vepe=DECODE(para_vepe,3,2,para_vepe)
+and irre_nmat=?
+and irre_nvec&gt;2
+</Value>
+    </Setting>
+    <Setting Name="ValidarDeudas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EXECUTE PROCEDURE obt_cond_matr_carg(?)</Value>
+    </Setting>
+    <Setting Name="ValidarNivel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select min(pert_nive)
+from aapert
+where pert_carr=?
+and pert_plan=?
+and pert_espe=?
+and pert_asig in (select asig_codi from aaasig where asig_hpra&lt;&gt;0)</Value>
+    </Setting>
+    <Setting Name="ValidarResolucionRetiro" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select count(*) as resolucion_retiro from aareso,aapara
+where reso_anoa=para_anoa
+and reso_vepe=DECODE(para_vepe,3,2,para_vepe)
+and reso_rut=?
+and reso_nula='N'
+and reso_tire='AC'
+</Value>
+    </Setting>
+    <Setting Name="ObtenerTodasLasEmpresasCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllEmpresasPagedCount</Value>
+    </Setting>
+    <Setting Name="ObtenerTodasLasEmpresasPaginadas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllEmpresasPaged</Value>
+    </Setting>
+    <Setting Name="SeleccionarValores" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from valores where val_tipo=@val_tipo</Value>
+    </Setting>
+    <Setting Name="SeleccionarCarreras" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT [CAR_ID]
+      ,[CAR_NOMBRE]
+     
+  FROM [CARRERA] where [CAR_TIPO] =1</Value>
+    </Setting>
+    <Setting Name="SeleccionarCiudades" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT  [CIU_ID]
+      ,[PAI_ID]
+      ,[CIU_NOMBRE]
+  FROM [CIUDAD] </Value>
+    </Setting>
+    <Setting Name="InsertarHojaVida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT into Persona (PER_NOMBRES,
+PER_APELLIDOS,
+PER_IDENTIFICACION,
+PER_MATRICULA,
+PER_DIRECCION,
+PER_TELEFONO1,
+PER_CELULAR,
+PER_CIUDAD,
+PER_GENERO,
+PER_NACIMIENTO,
+PER_MODALIDAD_TRABAJO,
+PER_DISPONIBILIDAD,
+PER_EMAIL,
+PER_CARRERA1,
+PER_NIVELC1,
+PER_CARRERA2,
+PER_NIVELC2,
+PER_ESPANOL,
+PER_INGLES,
+PER_FRANCES,
+PER_ALEMAN,
+PER_OTRO_IDIOMA,
+PER_POIDIOMA,
+PER_EMPRESA1,
+PER_CARGO1,
+PER_REFERENCIA1,
+PER_TEL_REF1,
+PER_INICIO1,
+PER_FIN1,
+PER_RESPONSABILIDADES1,
+PER_EMPRESA2,
+PER_CARGO2,
+PER_REFERENCIA2,
+PER_TEL_REF2,
+PER_INICIO2,
+PER_FIN2,
+PER_RESPONSABILIDADES2,
+PER_EMPRESA3,
+PER_CARGO3,
+PER_REFERENCIA3,
+PER_TEL_REF3,
+PER_INICIO3,
+PER_FIN3,
+PER_RESPONSABILIDADES3,
+per_nivel_empleo, 
+per_aspiracion, 
+per_objetivo, 
+per_meritos, per_actividades,
+per_institucion,
+per_estudios,
+per_nivelestudios,
+per_lugar,
+per_clase_empleo,
+PER_FECHA_CREACION)
+ VALUES(
+@PER_NOMBRES,
+@PER_APELLIDOS,
+@PER_IDENTIFICACION,
+@PER_MATRICULA,
+@PER_DIRECCION,
+@PER_TELEFONO1,
+@PER_CELULAR,
+@PER_CIUDAD,
+@PER_GENERO,
+@PER_NACIMIENTO,
+@PER_MODALIDAD_TRABAJO,
+@PER_DISPONIBILIDAD,
+@PER_EMAIL,
+@PER_CARRERA1,
+@PER_NIVELC1,
+@PER_CARRERA2,
+@PER_NIVELC2,
+@PER_ESPANOL,
+@PER_INGLES,
+@PER_FRANCES,
+@PER_ALEMAN,
+@PER_OTRO_IDIOMA,
+@PER_OTRO_IDIOMA_VALOR,
+@PER_EMPRESA1,
+@PER_CARGO1,
+@PER_REFERENCIA1,
+@PER_TEL_REF1,
+@PER_INICIO1,
+@PER_FIN1,
+@PER_RESPONSABILIDADES1,
+@PER_EMPRESA2,
+@PER_CARGO2,
+@PER_REFERENCIA2,
+@PER_TEL_REF2,
+@PER_INICIO2,
+@PER_FIN2,
+@PER_RESPONSABILIDADES2,
+@PER_EMPRESA3,
+@PER_CARGO3,
+@PER_REFERENCIA3,
+@PER_TEL_REF3,
+@PER_INICIO3,
+@PER_FIN3,
+@PER_RESPONSABILIDADES3,
+@per_nivel_empleo, 
+@per_aspiracion, 
+@per_objetivo, 
+@per_meritos, @per_actividades,
+@per_institucion,
+@per_estudios,
+@per_nivelestudios,
+@per_lugar,
+@per_clase_empleo,
+@per_fecha_creacion
+)</Value>
+    </Setting>
+    <Setting Name="ActualizarHojaVida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">update persona set PER_NOMBRES=@PER_NOMBRES,
+PER_APELLIDOS=@PER_APELLIDOS,
+PER_IDENTIFICACION=@PER_IDENTIFICACION,
+PER_MATRICULA=@PER_MATRICULA,
+PER_DIRECCION=@PER_DIRECCION,
+PER_TELEFONO1=@PER_TELEFONO1,
+PER_CELULAR=@PER_CELULAR,
+PER_CIUDAD=@PER_CIUDAD,
+PER_GENERO=@PER_GENERO,
+PER_NACIMIENTO=@PER_NACIMIENTO,
+PER_MODALIDAD_TRABAJO=@PER_MODALIDAD_TRABAJO,
+PER_DISPONIBILIDAD=@PER_DISPONIBILIDAD,
+PER_EMAIL=@PER_EMAIL,
+PER_CARRERA1=@PER_CARRERA1,
+PER_NIVELC1=@PER_NIVELC1,
+PER_CARRERA2=@PER_CARRERA2,
+PER_NIVELC2=@PER_NIVELC2,
+PER_ESPANOL=@PER_ESPANOL,
+PER_INGLES=@PER_INGLES,
+PER_FRANCES=@PER_FRANCES,
+PER_ALEMAN=@PER_ALEMAN,
+PER_OTRO_IDIOMA=@PER_OTRO_IDIOMA,
+PER_EMPRESA1=@PER_EMPRESA1,
+PER_CARGO1=@PER_CARGO1,
+PER_REFERENCIA1=@PER_REFERENCIA1,
+PER_TEL_REF1=@PER_TEL_REF1,
+PER_INICIO1=@PER_INICIO1,
+PER_FIN1=@PER_FIN1,
+PER_RESPONSABILIDADES1=@PER_RESPONSABILIDADES1,
+PER_EMPRESA2=@PER_EMPRESA2,
+PER_CARGO2=@PER_CARGO2,
+PER_REFERENCIA2=@PER_REFERENCIA2,
+PER_TEL_REF2=@PER_TEL_REF2,
+PER_INICIO2=@PER_INICIO2,
+PER_FIN2=@PER_FIN2,
+PER_RESPONSABILIDADES2=@PER_RESPONSABILIDADES2,
+PER_EMPRESA3=@PER_EMPRESA3,
+PER_CARGO3=@PER_CARGO3,
+PER_REFERENCIA3=@PER_REFERENCIA3,
+PER_TEL_REF3=@PER_TEL_REF3,
+PER_INICIO3=@PER_INICIO3,
+PER_FIN3=@PER_FIN3,
+PER_RESPONSABILIDADES3=@PER_RESPONSABILIDADES3, 
+PER_POIDIOMA=@PER_OTRO_IDIOMA_VALOR,
+per_aspiracion=@per_aspiracion,
+per_nivel_empleo=@per_nivel_empleo,
+per_meritos=@per_meritos,
+per_objetivo=@per_objetivo,
+per_actividades=@per_actividades,
+per_institucion=@per_institucion, 
+per_estudios=@per_estudios, 
+per_nivelestudios=@per_nivelestudios,
+per_lugar=@per_lugar,
+per_clase_empleo=@per_clase_empleo,
+per_fecha_actualizacion=@per_fecha_actualizacion
+where PER_MATRICULA=@PER_MATRICULA</Value>
+    </Setting>
+    <Setting Name="SettingConsultarNotaBE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select sum(prac_hora) from aaprac
+where prac_nmat = @p1
+and prac_mate = @p2</Value>
+    </Setting>
+    <Setting Name="ConsultarNotaSAES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select sum(prac_hora) from aaprac
+where prac_nmat = ?
+and prac_mate = ?</Value>
+    </Setting>
+    <Setting Name="ConsultarNotaBE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select sum(prac_hora) from aaprac
+where prac_nmat = @p1
+and prac_mate = @p2</Value>
+    </Setting>
+    <Setting Name="InsertarCurso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO CURSOS
+           (PER_ID
+           ,PAI_ID
+           ,CUR_INSTITUCION
+           ,CUR_NOMBRE
+           ,CUR_FECHA_INICIO
+           ,CUR_DURACION
+           ,CUR_DESCRIPCION
+           ,CUR_ESTADO)
+     VALUES
+           (@PER_ID
+           ,@PAI_ID
+           ,@CUR_INSTITUCION
+           ,@CUR_NOMBRE
+           ,@CUR_FECHA_INICIO
+           ,@CUR_DURACION
+           ,@CUR_DESCRIPCION
+           ,@CUR_ESTADO)</Value>
+    </Setting>
+    <Setting Name="ActualizarCurso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UPDATE CURSOS
+   SET PER_ID =@PER_ID
+      ,PAI_ID =@PAI_ID
+      ,CUR_INSTITUCION =@CUR_INSTITUCION
+      ,CUR_NOMBRE =@CUR_NOMBRE
+      ,CUR_FECHA_INICIO =@CUR_FECHA_INICIO
+      ,CUR_DURACION =@CUR_DURACION
+      ,CUR_DESCRIPCION =@CUR_DESCRIPCION
+      ,CUR_ESTADO =@CUR_ESTADO
+ WHERE cur_id=@cur_id</Value>
+    </Setting>
+    <Setting Name="SeleccionarCurso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT [CUR_ID]
+      ,[PER_ID]
+      ,[PAI_ID]
+      ,[CUR_INSTITUCION]
+      ,[CUR_NOMBRE]
+      ,[CUR_FECHA_INICIO]
+      ,[CUR_DURACION]
+      ,[CUR_DESCRIPCION]
+      ,[CUR_ESTADO]
+  FROM [CURSOS] where cur_id=@cur_id and per_id=@per_id</Value>
+    </Setting>
+    <Setting Name="VerificarExistenciaCurso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select CUR_ID from Curso where CUR_ID=@CUR_ID</Value>
+    </Setting>
+    <Setting Name="SeleccionarCursosPorPersona" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ObtenerTodosLosCursosPorPersona" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select * from cursos where per_id=@per_id</Value>
+    </Setting>
+    <Setting Name="EliminarCurso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">delete cursos where cur_id=@cur_id</Value>
+    </Setting>
+    <Setting Name="ObtenerOfertarPaginado" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllOfertasPaged</Value>
+    </Setting>
+    <Setting Name="ObtenerOfertasPaginadoCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetAllOfertasPagedCount</Value>
+    </Setting>
+    <Setting Name="ObtenerOfertasPorId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GetOfertasByOfeID</Value>
+    </Setting>
+    <Setting Name="ValidarOfertaPorUsuario" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UserValidOferta</Value>
+    </Setting>
+    <Setting Name="InsertarOferta" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO aplicacion_oferta
+                  (ofe_id, per_id)
+                VALUES
+                  (@oferta_id, @persona_id)</Value>
+    </Setting>
+    <Setting Name="SeleccionCarreraSAESBolsaEmpleo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT 
+      [CAR_BE]
+      ,[CAR_SAES_NOMBRE]
+  FROM [CARRERA_SAES_BE] where  [CAR_SAES] =@SAES</Value>
+    </Setting>
+    <Setting Name="SeleccionarPaises" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">
+                  SELECT  [PAI_ID]
+                  ,[PAI_NOMBRE]
+                  FROM [PAIS] order by [PAI_NOMBRE]
+                </Value>
+    </Setting>
+    <Setting Name="SeleccionarListaMateriasSupervision" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select carg_asig,
+         (select asig_prac from aaasig where asig_codi=carg_asig) as asig_prac,
+         (select asig_desc from aaasig where asig_codi=carg_asig) as asig_desc,
+         (select asig_hpra from aaasig where asig_codi=carg_asig) as asig_hpra,
+         (select min(pers_rutp || pers_dve || '|' || trim(pers_nomb) || ' ' || trim(pers_apat)) from aahora,aapara,adpers where hora_asig=carg_asig and hora_secc=1 and hora_anoa=para_anoa and hora_vepe=para_vepe and pers_rutp=hora_prof) as docente
+from aacarg, aaasig, aapara
+where carg_anoa = para_anoa
+and carg_vepe = para_vepe
+and carg_nmat = ?
+and carg_asig= asig_codi
+and asig_hpra is not null</Value>
+    </Setting>
+    <Setting Name="SeleccionarMateriaPorIdSupervision" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select carg_asig,
+         (select asig_prac from aaasig where asig_codi=carg_asig) as asig_prac,
+         (select asig_desc from aaasig where asig_codi=carg_asig) as asig_desc,
+         (select asig_hpra from aaasig where asig_codi=carg_asig) as asig_hpra,
+         (select min(pers_rutp || pers_dve || '|' || trim(pers_nomb) || ' ' || trim(pers_apat)) from aahora,aapara,adpers where  hora_asig=carg_asig and hora_secc=1 and hora_anoa=para_anoa and hora_vepe=para_vepe and pers_rutp=hora_prof) as docente
+from aacarg
+where carg_asig=?
+and carg_nmat=?</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

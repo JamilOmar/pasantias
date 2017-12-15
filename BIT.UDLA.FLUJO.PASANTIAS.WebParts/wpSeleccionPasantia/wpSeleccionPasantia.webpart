@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BIT.UDLA.FLUJO.PASANTIAS.WebParts.wpSeleccionPasantia.wpSeleccionPasantia, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Selección de Práctica PreProfesional</property>
+        <property name="Description" type="string">Control que permite el tipo de práctica y que valida si el usuario
+        puede o no hacer uso de la misma</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
